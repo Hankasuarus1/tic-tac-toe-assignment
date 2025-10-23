@@ -40,6 +40,7 @@ namespace ClassGame {
                 if (gameOver) {
                     ImGui::Text("Game Over!");
                     ImGui::Text("Winner: %d", gameWinner);
+                    printf("Game Over");
                     if (ImGui::Button("Reset Game")) {
                         game->stopGame();
                         game->setUpBoard();
